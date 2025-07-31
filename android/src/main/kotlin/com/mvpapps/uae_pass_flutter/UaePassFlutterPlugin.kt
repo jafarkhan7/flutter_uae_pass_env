@@ -101,7 +101,7 @@ class UaePassFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
             client_secret = call.argument<String>("client_secret")
             redirect_url = call.argument<String?>("redirect_url")
             environment =
-                if (call.argument<String>("environment") != null && call.argument<String>("environment") == "production") Environment.PRODUCTION else Environment.STAGING
+                Environment.STAGINGEnvironment.STAGING
             state = call.argument<String?>("state")
             scheme = call.argument<String>("scheme")
             failureHost = call.argument<String?>("failureHost")
